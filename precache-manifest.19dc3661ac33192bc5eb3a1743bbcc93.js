@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "34203148cd5d70ccc523",
-    "url": "/static/css/main.c7eb664c.chunk.css"
+    "revision": "63a701d9f11253d0fc48",
+    "url": "/static/css/main.50bbe6b8.chunk.css"
   },
   {
-    "revision": "34203148cd5d70ccc523",
-    "url": "/static/js/main.34203148.chunk.js"
+    "revision": "63a701d9f11253d0fc48",
+    "url": "/static/js/main.63a701d9.chunk.js"
   },
   {
     "revision": "30676634c407f586b344",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/static/media/crisscross.745d77dd.jpg"
   },
   {
-    "revision": "68810269f8681a7c6096156e7eb0227d",
+    "revision": "955bd9d16536c15ee51cc6865f9b48d2",
     "url": "/index.html"
   }
 ];
