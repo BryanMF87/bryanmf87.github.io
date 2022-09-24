@@ -1,17 +1,19 @@
 {
-  "main.css": "/static/css/main.50bbe6b8.chunk.css",
-  "main.js": "/static/js/main.63a701d9.chunk.js",
-  "main.js.map": "/static/js/main.63a701d9.chunk.js.map",
-  "static/js/1.30676634.chunk.js": "/static/js/1.30676634.chunk.js",
-  "static/js/1.30676634.chunk.js.map": "/static/js/1.30676634.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/macarons.jpg": "/static/media/macarons.626e5fdb.jpg",
-  "static/media/resume2022.pdf": "/static/media/resume2022.9a1c309c.pdf",
-  "static/media/guy.png": "/static/media/guy.ad90c25e.png",
-  "static/media/crisscross.jpg": "/static/media/crisscross.745d77dd.jpg",
-  "static/css/main.50bbe6b8.chunk.css.map": "/static/css/main.50bbe6b8.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.19dc3661ac33192bc5eb3a1743bbcc93.js": "/precache-manifest.19dc3661ac33192bc5eb3a1743bbcc93.js",
-  "service-worker.js": "/service-worker.js"
+  "files": {
+    "main.css": "/static/css/main.1ed3c9e6.css",
+    "main.js": "/static/js/main.ee147388.js",
+    "static/media/resume2022.pdf": "/static/media/resume2022.986399066bba818aed94.pdf",
+    "static/media/sweet-treats.mp4": "/static/media/sweet-treats.3951090edcc990990cef.mp4",
+    "static/media/weather-app.mp4": "/static/media/weather-app.86b1aa1b25c36fb60c08.mp4",
+    "static/media/tic-tac-toe.mp4": "/static/media/tic-tac-toe.991219dedb446331ebf2.mp4",
+    "static/media/guy.png": "/static/media/guy.d3591ccf94c0f7b1c631.png",
+    "static/media/crisscross.jpg": "/static/media/crisscross.d3f5e95fb4bbfd952fb3.jpg",
+    "index.html": "/index.html",
+    "main.1ed3c9e6.css.map": "/static/css/main.1ed3c9e6.css.map",
+    "main.ee147388.js.map": "/static/js/main.ee147388.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ed3c9e6.css",
+    "static/js/main.ee147388.js"
+  ]
 }
