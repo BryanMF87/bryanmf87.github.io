@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.1ed3c9e6.css",
-    "main.js": "/static/js/main.ee147388.js",
+    "main.css": "/static/css/main.78750c3f.css",
+    "main.js": "/static/js/main.069d8c68.js",
     "static/media/resume2022.pdf": "/static/media/resume2022.986399066bba818aed94.pdf",
-    "static/media/sweet-treats.mp4": "/static/media/sweet-treats.3951090edcc990990cef.mp4",
-    "static/media/weather-app.mp4": "/static/media/weather-app.86b1aa1b25c36fb60c08.mp4",
-    "static/media/tic-tac-toe.mp4": "/static/media/tic-tac-toe.991219dedb446331ebf2.mp4",
-    "static/media/guy.png": "/static/media/guy.d3591ccf94c0f7b1c631.png",
-    "static/media/crisscross.jpg": "/static/media/crisscross.d3f5e95fb4bbfd952fb3.jpg",
+    "static/media/weatherapp.mp4": "/static/media/weatherapp.3142a0b33fcf9bfd5708.mp4",
+    "static/media/sweettreats.mp4": "/static/media/sweettreats.56bea59e9482bea6d856.mp4",
+    "static/media/timetracker.mp4": "/static/media/timetracker.0d5008ed3c58ea621872.mp4",
+    "static/media/tictactoe.mp4": "/static/media/tictactoe.6fcfc8b4e69d3e77b628.mp4",
+    "static/media/me.png": "/static/media/me.2d7527bbdc3ce9a0985f.png",
     "index.html": "/index.html",
-    "main.1ed3c9e6.css.map": "/static/css/main.1ed3c9e6.css.map",
-    "main.ee147388.js.map": "/static/js/main.ee147388.js.map"
+    "main.78750c3f.css.map": "/static/css/main.78750c3f.css.map",
+    "main.069d8c68.js.map": "/static/js/main.069d8c68.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ed3c9e6.css",
-    "static/js/main.ee147388.js"
+    "static/css/main.78750c3f.css",
+    "static/js/main.069d8c68.js"
   ]
 }
