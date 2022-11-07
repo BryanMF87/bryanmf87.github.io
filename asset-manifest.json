@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.843e6e14.css",
-    "main.js": "/static/js/main.f8af72ba.js",
+    "main.js": "/static/js/main.6a59af33.js",
     "static/media/resume2022.pdf": "/static/media/resume2022.986399066bba818aed94.pdf",
     "static/media/weatherapp.mp4": "/static/media/weatherapp.3142a0b33fcf9bfd5708.mp4",
     "static/media/sweettreats.mp4": "/static/media/sweettreats.56bea59e9482bea6d856.mp4",
@@ -10,10 +10,10 @@
     "static/media/me.png": "/static/media/me.d0065481f2ba5802b233.png",
     "index.html": "/index.html",
     "main.843e6e14.css.map": "/static/css/main.843e6e14.css.map",
-    "main.f8af72ba.js.map": "/static/js/main.f8af72ba.js.map"
+    "main.6a59af33.js.map": "/static/js/main.6a59af33.js.map"
   },
   "entrypoints": [
     "static/css/main.843e6e14.css",
-    "static/js/main.f8af72ba.js"
+    "static/js/main.6a59af33.js"
   ]
 }
