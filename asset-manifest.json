@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.cb331262.css",
+    "main.css": "/static/css/main.2ef1b1d9.css",
     "main.js": "/static/js/main.15bf431d.js",
     "static/media/resume2022.pdf": "/static/media/resume2022.99d13b27e751e1d85ce2.pdf",
     "static/media/weatherapp.mp4": "/static/media/weatherapp.3142a0b33fcf9bfd5708.mp4",
@@ -9,11 +9,11 @@
     "static/media/tictactoe.mp4": "/static/media/tictactoe.6fcfc8b4e69d3e77b628.mp4",
     "static/media/me.png": "/static/media/me.d0065481f2ba5802b233.png",
     "index.html": "/index.html",
-    "main.cb331262.css.map": "/static/css/main.cb331262.css.map",
+    "main.2ef1b1d9.css.map": "/static/css/main.2ef1b1d9.css.map",
     "main.15bf431d.js.map": "/static/js/main.15bf431d.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb331262.css",
+    "static/css/main.2ef1b1d9.css",
     "static/js/main.15bf431d.js"
   ]
 }
