@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/BryanMF87/bryanmf87.github.io/static/css/main.3734633a.css",
-    "main.js": "/BryanMF87/bryanmf87.github.io/static/js/main.3c81ad49.js",
-    "static/media/travelwebsite.zip": "/BryanMF87/bryanmf87.github.io/static/media/travelwebsite.0a93e26efb8a45b48b22.zip",
-    "static/media/resume.pdf": "/BryanMF87/bryanmf87.github.io/static/media/resume.f3e0a8bf7bf87d75b2c2.pdf",
-    "static/media/selfie.jpg": "/BryanMF87/bryanmf87.github.io/static/media/selfie.a0685cd4f7a90e0cc603.jpg",
-    "index.html": "/BryanMF87/bryanmf87.github.io/index.html",
-    "main.3734633a.css.map": "/BryanMF87/bryanmf87.github.io/static/css/main.3734633a.css.map",
-    "main.3c81ad49.js.map": "/BryanMF87/bryanmf87.github.io/static/js/main.3c81ad49.js.map"
+    "main.css": "/static/css/main.3734633a.css",
+    "main.js": "/static/js/main.225cc62f.js",
+    "static/media/travelwebsite.zip": "/static/media/travelwebsite.0a93e26efb8a45b48b22.zip",
+    "static/media/resume.pdf": "/static/media/resume.f3e0a8bf7bf87d75b2c2.pdf",
+    "static/media/selfie.jpg": "/static/media/selfie.a0685cd4f7a90e0cc603.jpg",
+    "index.html": "/index.html",
+    "main.3734633a.css.map": "/static/css/main.3734633a.css.map",
+    "main.225cc62f.js.map": "/static/js/main.225cc62f.js.map"
   },
   "entrypoints": [
     "static/css/main.3734633a.css",
-    "static/js/main.3c81ad49.js"
+    "static/js/main.225cc62f.js"
   ]
 }
