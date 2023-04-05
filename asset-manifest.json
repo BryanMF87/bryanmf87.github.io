@@ -1,20 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.1cd2ef9d.css",
-    "main.js": "/static/js/main.9720d9d5.js",
-    "static/media/resume2023.pdf": "/static/media/resume2023.9908b5232550026f6838.pdf",
-    "static/media/weatherapp.mp4": "/static/media/weatherapp.3142a0b33fcf9bfd5708.mp4",
-    "static/media/sweettreats.mp4": "/static/media/sweettreats.56bea59e9482bea6d856.mp4",
-    "static/media/timetracker.mp4": "/static/media/timetracker.0d5008ed3c58ea621872.mp4",
-    "static/media/worldflags.mp4": "/static/media/worldflags.0198d4469891aa9118f1.mp4",
-    "static/media/tictactoe.mp4": "/static/media/tictactoe.6fcfc8b4e69d3e77b628.mp4",
-    "static/media/me.png": "/static/media/me.d0065481f2ba5802b233.png",
-    "index.html": "/index.html",
-    "main.1cd2ef9d.css.map": "/static/css/main.1cd2ef9d.css.map",
-    "main.9720d9d5.js.map": "/static/js/main.9720d9d5.js.map"
+    "main.css": "/BryanMF87/bryanmf87.github.io/static/css/main.3734633a.css",
+    "main.js": "/BryanMF87/bryanmf87.github.io/static/js/main.3c81ad49.js",
+    "static/media/travelwebsite.zip": "/BryanMF87/bryanmf87.github.io/static/media/travelwebsite.0a93e26efb8a45b48b22.zip",
+    "static/media/resume.pdf": "/BryanMF87/bryanmf87.github.io/static/media/resume.f3e0a8bf7bf87d75b2c2.pdf",
+    "static/media/selfie.jpg": "/BryanMF87/bryanmf87.github.io/static/media/selfie.a0685cd4f7a90e0cc603.jpg",
+    "index.html": "/BryanMF87/bryanmf87.github.io/index.html",
+    "main.3734633a.css.map": "/BryanMF87/bryanmf87.github.io/static/css/main.3734633a.css.map",
+    "main.3c81ad49.js.map": "/BryanMF87/bryanmf87.github.io/static/js/main.3c81ad49.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cd2ef9d.css",
-    "static/js/main.9720d9d5.js"
+    "static/css/main.3734633a.css",
+    "static/js/main.3c81ad49.js"
   ]
 }
