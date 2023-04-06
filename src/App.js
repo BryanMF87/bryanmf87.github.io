@@ -133,20 +133,20 @@ function App() {
 
         <main ref={mainRef} className="w-full flex flex-row overflow-x-auto overflow-y-hidden scrollbar-hide snap-x snap-mandatory">
             {/* about column */}
-            <div ref={aboutColRef} className="shrink-0 flex-col h-screen w-screen px-4 pb-24 overflow-y-scroll scroll-smooth scrollbar-hide snap-center relative sm:px-6 md:w-3/5 md:flex-shrink-1 lg:px-10">
+            <div ref={aboutColRef} className="shrink-0 flex-col h-screen w-screen px-4 pb-24 overflow-y-scroll scroll-smooth scrollbar-hide snap-center relative sm:px-12 md:px-6 md:w-3/5 md:flex-shrink-1 lg:px-10">
               <button onClick={() => handleXScroll(workColRef.current)} className="absolute flex gap-1 top-6 right-4 md:hidden">
                  <p className="font-delicious text-2xl rotate-12">My Work</p>
                  <TbArrowCurveRight className="text-2xl rotate-90 mt-5"/>
               </button>
-              <section ref={homeRef} className="py-32 my-auto mr-auto md:pt-20">
+              <section ref={homeRef} className="h-full py-32 my-auto mr-auto md:h-auto md:pt-20">
                 <div className='w-min mx-auto'>
-                  <h1 className="text-8xl font-bold tracking-tight leading-none xs:text-9xl smer:text-10xl sm:text-11xl md:text-9xl lg:text-11xl">Hello World</h1>
+                  <h1 className="text-8xl font-bold tracking-tight leading-none xs:text-9xl smer:text-10xl sm:text-11xl md:text-9xl lg:text-10xl xl:text-11xl">Hello World</h1>
                   <h3 className="text-3xl text-right tracking-tight max-w-xs ml-auto">I'll help you create awesome online content</h3>
                 </div>
               </section>
               <section ref={aboutRef} className="flex flex-col gap-4 mb-48">
                 <h2 className="text-6xl font-bold tracking-tighter mb-8">Websites, Apps, Designs, & custom code</h2>
-                  <div className="flex flex-col gap-6 lg:grid lg:grid-cols-2">
+                  <div className="flex flex-col gap-6 sm:grid sm:grid-cols-2 md:flex md:flex-col lg:grid lg:grid-cols-2">
                     <p className="text-lg md:text-base"><span className="text-xl font-bold md:text-lg">Hi there! I'm Bryan Fink,</span> a front-end web developer with graphic design, and sales experience. I dream of building online content for people / companies that can change the world.</p>
                     <p className="text-lg md:text-base"><span className="text-xl font-bold md:text-lg">Currently I am searching for a wonderful company to work with and learn from.</span> Outside of the office I enjoy nature hikes, martial arts, dancing, and action movies.</p>
                   </div>
@@ -161,14 +161,14 @@ function App() {
               </section>
               <section className="flex flex-col mb-48">
                 <h2 className="text-6xl font-bold tracking-tighter mb-8">Relevant Work History</h2>
-                <div className='flex flex-col gap-6 lg:grid lg:grid-cols-2'>
+                <div className='flex flex-col gap-6 sm:grid sm:grid-cols-2 md:flex md:flex-col lg:grid lg:grid-cols-2'>
                   <Card
                     date={'January 2021 - September 2021'}
                     company={'Square, inc'}
                     role={'Business development rep'}
                     disc={[
                       'Fortune 500 tech company environment', 
-                      ' sales person',
+                      'Top 1% of all business development reps with 100% quota attainment',
                       'Worked 100% remotely',
                       'Quickly learned a new tech skillset',
                       'Gained insight into tech world operations'
@@ -211,7 +211,7 @@ function App() {
               </section>
               <section className="flex flex-col mb-48">
                 <h2 className="text-6xl font-bold tracking-tighter mb-8">Education</h2>
-                <div className='flex flex-col gap-6 lg:grid lg:grid-cols-2'>
+                <div className='flex flex-col gap-6 sm:grid sm:grid-cols-2 md:flex md:flex-col lg:grid lg:grid-cols-2'>
                   <Card
                     date={'January 2022 - present'}
                     company={'Self-study'}
