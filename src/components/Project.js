@@ -7,23 +7,23 @@ const Project = ({id, name, description, techStack, liveLink, codeLink, fileLink
         <div className="mb-48">
             <h2 className="text-6xl font-bold tracking-tighter">{id}</h2>
             <h3 className="text-3xl font-bold tracking-tight mb-4">{name}</h3>
-            <p>{description}</p>
+            <p className="text-lg md:text-base">{description}</p>
             <div className="flex flex-wrap gap-2 my-4">
                 {techStack.map((tech, index) => (
                     <Bullet key={index} skill={tech}/>
                 ))}
             </div>
-            <ul className="flex flex-col gap-2 pt-4">
+            <ul className="flex flex-col pt-4">
                 <li>
                     <a href={codeLink} target="_blank" rel="noopener noreferrer">
-                        <button className="font-bold text-xl flex items-center gap-1">
+                        <button className="font-bold text-xl flex items-center gap-1 md:text-lg">
                             View the code <FaAngleDoubleRight />
                         </button>
                     </a>
                 </li>
                 <li>
                     <a href={liveLink} target="_blank" rel="noopener noreferrer">
-                        <button className="font-bold text-xl flex items-center gap-1">
+                        <button className="font-bold text-xl flex items-center gap-1 md:text-lg">
                             See the demo <FaAngleDoubleRight />
                         </button>
                     </a>
@@ -34,7 +34,7 @@ const Project = ({id, name, description, techStack, liveLink, codeLink, fileLink
                             <>
                                 <li>
                                     <a href={fileLink} download>
-                                        <button className="font-bold text-xl flex items-center gap-1">
+                                        <button className="font-bold text-xl flex items-center gap-1 md:text-lg">
                                             See the design <FaAngleDoubleRight />
                                         </button>
                                     </a>

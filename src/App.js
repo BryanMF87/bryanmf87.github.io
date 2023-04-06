@@ -3,7 +3,11 @@ import { useEffect, useRef, useState } from 'react';
 import Bullet from './components/Bullet';
 import Card from './components/Card';
 import Project from './components/Project';
-import {FaBars, FaSyncAlt, FaAngellist, FaUserAstronaut, FaViber, FaRegFileAlt, FaGithub, FaCircle, FaRegCircle, FaAngleDoubleRight} from 'react-icons/fa';
+import {FaBars, FaAngellist, FaUserAstronaut, FaViber, FaGithub, FaAngleDoubleRight} from 'react-icons/fa';
+import {BiGlassesAlt} from 'react-icons/bi';
+import {MdPersonPin} from 'react-icons/md';
+import {TbArrowCurveRight} from 'react-icons/tb';
+import {BsPersonWorkspace} from 'react-icons/bs';
 import selfie from './selfie.jpg';
 import resume from './resume.pdf';
 import psdFile from './travelwebsite.zip';
@@ -33,12 +37,30 @@ function App() {
   };
 
 
-  // handle mobile page scroll X
-  const target = useRef(null);
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const handleScroll = () => {
-    const element = target.current;
-    setScrollPosition(element.scrollLeft);
+  // handle vertical 'about me' section scroll
+  const aboutColRef = useRef(null);
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+  const handleYScroll = (target) => {
+    if(mainRef.current.offsetLeft > 0) {
+      handleXScroll(aboutColRef.current)
+    }
+    aboutColRef.current.scrollTo({ 
+      top: target.offsetTop,
+      behavior: 'smooth'
+    })
+  };
+
+  
+  // handle horizontal scroll between about and work columns
+  const mainRef = useRef(null);
+  const workColRef = useRef(null);
+  const handleXScroll = (target) => {
+    mainRef.current.scrollTo({
+      left: target.offsetLeft,
+      behavior: 'smooth'
+    })
   };
 
 
@@ -46,7 +68,7 @@ function App() {
   const techStack = ['HTML', 'CSS', 'SCSS', 'Bootstrap', 'Tailwind', 'Styled-components', 'JavaScript', 'React', 'NextJs', 'GatsbyJS', 'Git', 'Figma', 'Adobe creative suite'];
 
   return (
-    <div className="bg-ccYellow text-ccDark font-sans-roboto overflow-hidden">
+    <div className="h-screen w-screen bg-ccYellow text-ccDark font-sans-roboto overflow-hidden">
       <header className='h-16 flex items-center border-ccDark border-b'>
         <div onClick={()=> setShowNav(!showNav)} className="h-full flex justify-center items-center w-16 text-2xl border-ccDark border-r cursor-pointer hover:bg-ccDark hover:text-ccYellow md:hidden">
           <FaBars />
@@ -55,91 +77,79 @@ function App() {
           <img src={selfie} className="h-12 w-12 object-contain rounded-full" alt="Bryan Fink" />
           <div className="flex-1 flex-col items-center">
             <h5 className="text-xl font-bold">Bryan Fink</h5>
-            <div className="flex items-center gap-2">
-              <FaSyncAlt className="cursor-pointer" onClick={changeTitle}/> 
+            <div className="flex items-center gap-1">
+              <MdPersonPin size={'1.25rem'} className="cursor-pointer" onClick={changeTitle}/> 
               <p>{title[currentIndex]}</p>
             </div>
           </div>
         </div>
       </header>
 
-      <div className="flex h-screen overflow-y-hidden">
+      <div className="w-full flex">
         <nav className={`h-screen w-16 flex-none pt-8 align-center border-r border-ccDark bg-ccYellow ${showNav ? "visible" : "hidden"}`}>
           <ul className="flex flex-col gap-10">
             <li className="flex flex-col mx-auto">
-              <a href="#home">
-                <button onClick={() => setShowNav(false)}>
+                <button onClick={()=> handleYScroll(homeRef.current)} className="hover:opacity-50">
                   <FaAngellist size="1.75rem" className="mx-auto"/>
-                  <p className="text-sm text-center">Home</p>
+                  <p className="text-xs text-center mt-1 font-semibold">Home</p>
                 </button>
-              </a>
             </li>
             <li className="flex flex-col mx-auto">
-              <a href="#about">
-                <button onClick={() => setShowNav(false)}>
+                <button onClick={()=> handleYScroll(aboutRef.current)} className="hover:opacity-50">
                   <FaUserAstronaut size="1.75rem" className="mx-auto"/>
-                  <p className="text-sm text-center">About</p>
+                  <p className="text-xs text-center mt-1 font-semibold">About</p>
                 </button>
-              </a>
             </li>
             <li className="flex flex-col mx-auto">
-              <a href="#contact">
-                <button onClick={() => setShowNav(false)}>
+                <button onClick={()=> handleYScroll(contactRef.current)} className="hover:opacity-50">
                   <FaViber size="1.75rem" className="mx-auto"/>
-                  <p className="text-sm text-center">Contact</p>
+                  <p className="text-xs text-center mt-1 font-semibold">Contact</p>
                 </button>
-              </a>
+            </li>
+            <li className="flex flex-col mx-auto md:hidden">
+                <button onClick={()=> handleXScroll(workColRef.current)} className="hover:opacity-50">
+                  <BsPersonWorkspace size="1.75rem" className="mx-auto"/>
+                  <p className="text-xs text-center mt-1 font-semibold">Work</p>
+                </button>
             </li>
             <li className="flex flex-col mx-auto">
               <a href={resume} target="_blank" rel="noopener noreferrer">
-                <button>
-                  <FaRegFileAlt size="1.75rem" className="mx-auto"/>
-                  <p className="text-sm text-center">Resume</p>
+                <button className="hover:opacity-50">
+                  <BiGlassesAlt size="1.75rem" className="mx-auto"/>
+                  <p className="text-xs text-center mt-1 font-semibold">Resume</p>
                 </button>
               </a>
             </li>
             <li className="flex flex-col mx-auto">
               <a href="https://github.com/BryanMF87" target="_blank" rel="noopener noreferrer">
-                <button>
+                <button className="hover:opacity-50">
                   <FaGithub size="1.75rem" className="mx-auto"/>
-                  <p className="text-sm text-center">Github</p>
+                  <p className="text-xs text-center mt-1 font-semibold">Github</p>
                 </button>
               </a>
             </li>
           </ul>
         </nav>
 
-        <main className="h-screen flex flex-col overflow-x-auto overflow-y-hidden">
-          <div className="w-screen flex flex-row gap-2 py-4 mx-auto justify-center md:hidden">
-              <div className="flex gap-1">
-                {scrollPosition > window.innerWidth ? (
-                  <>
-                    <FaRegCircle />
-                    <FaCircle />
-                  </>
-                ) : (
-                  <>
-                    <FaCircle />
-                    <FaRegCircle />
-                  </>
-                )}
-              </div>
-          </div>
-          {/* outer container */}
-          <div ref={target} onScroll={handleScroll} className="h-screen w-screen flex overflow-y-hidden snap-x md:w-full md:h-full">
+        <main ref={mainRef} className="w-full flex flex-row overflow-x-auto overflow-y-hidden scrollbar-hide snap-x">
             {/* about column */}
-            <div id="home" className="flex-shrink-0 flex-col h-screen w-screen px-4 pb-24 overflow-y-scroll scrollbar-hide snap-start md:w-3/5 md:px-6 md:flex-shrink-1 lg:w-2/3">
-              <section className="py-48 my-auto mr-auto">
-                <div className='w-min'>
-                  <h1 className="text-9xl font-bold tracking-tight">Hello World</h1>
+            <div ref={aboutColRef} className="shrink-0 flex-col h-screen w-screen px-4 pb-24 overflow-y-scroll scroll-smooth scrollbar-hide snap-start relative md:w-3/5 md:flex-shrink-1 md:px-6 lg:px-10">
+              <button onClick={() => handleXScroll(workColRef.current)} className="absolute flex gap-1 top-6 right-4 md:hidden">
+                 <p className="font-delicious text-2xl rotate-12">My Work</p>
+                 <TbArrowCurveRight className="text-2xl rotate-90 mt-5"/>
+              </button>
+              <section ref={homeRef} className="py-48 my-auto mr-auto md:pt-20 md:pb-32">
+                <div className='w-min lg:mx-auto'>
+                  <h1 className="text-9xl font-bold tracking-tight leading-none lg:text-11xl">Hello World</h1>
                   <h3 className="text-3xl text-right tracking-tight max-w-xs ml-auto">I'll help you create awesome online content</h3>
                 </div>
               </section>
-              <section id="about" className="flex flex-col gap-4 mb-48">
+              <section ref={aboutRef} className="flex flex-col gap-4 mb-48">
                 <h2 className="text-6xl font-bold tracking-tighter mb-8">Websites, Apps, Designs, & custom code</h2>
-                <p className="text-lg"><span className="text-xl font-bold">Hi there! I'm Bryan Fink,</span> a front-end web developer, graphic designer, and sales person who dreams of building online content for people / companies that can change the world.</p>
-                <p className="text-lg"><span className="font-bold">Currently I am searching for a wonderful company who shares this desire from which I can work with and learn from.</span></p>
-                <p className="text-lg">Outside of the office I enjoy nature hikes, martial arts, dancing, and action movies.</p>
+                  <div className="lg:grid lg:grid-cols-2 gap-6">
+                    <p className="text-lg md:text-base"><span className="text-xl font-bold md:text-lg">Hi there! I'm Bryan Fink,</span> a front-end web developer with graphic design, and sales experience. I dream of building online content for people / companies that can change the world.</p>
+                    <p className="text-lg md:text-base"><span className="text-xl font-bold md:text-lg">Currently I am searching for a wonderful company to work with and learn from.</span> Outside of the office I enjoy nature hikes, martial arts, dancing, and action movies.</p>
+                  </div>
               </section>
               <section className="flex flex-col mb-48">
                 <h2 className="text-6xl font-bold tracking-tighter mb-8">Tech Stack</h2>
@@ -151,14 +161,14 @@ function App() {
               </section>
               <section className="flex flex-col mb-48">
                 <h2 className="text-6xl font-bold tracking-tighter mb-8">Relevant Work History</h2>
-                <div className='flex flex-col gap-6'>
+                <div className='flex flex-col gap-6 lg:grid lg:grid-cols-2'>
                   <Card
                     date={'January 2021 - September 2021'}
                     company={'Square, inc'}
                     role={'Business development rep'}
                     disc={[
                       'Fortune 500 tech company environment', 
-                      'top performing sales person',
+                      ' sales person',
                       'Worked 100% remotely',
                       'Quickly learned a new tech skillset',
                       'Gained insight into tech world operations'
@@ -182,7 +192,7 @@ function App() {
                     role={'Graphic designer'}
                     disc={[
                       'Mid level company environment',
-                      'Collaborated with web designer and senior design team to build out web layouts and graphics',
+                      'Collaborated with web developer and senior design team to build web layouts and graphics',
                       'Worked 100% on site',
                       'Used Adobe creative suite'
                     ]}
@@ -201,7 +211,7 @@ function App() {
               </section>
               <section className="flex flex-col mb-48">
                 <h2 className="text-6xl font-bold tracking-tighter mb-8">Education</h2>
-                <div className='flex flex-col gap-6'>
+                <div className='flex flex-col gap-6 lg:grid lg:grid-cols-2'>
                   <Card
                     date={'January 2022 - present'}
                     company={'Self-study'}
@@ -215,7 +225,7 @@ function App() {
                   <Card
                     date={'May 2008 - May 2011'}
                     company={'Murray State University'}
-                    role={'Graphic design & web dev'}
+                    role={'Graphic design & web development'}
                     disc={[
                       'Earned a BA in graphic design',
                       'Emphasized on web development',
@@ -224,9 +234,9 @@ function App() {
                   />
                 </div>
               </section>
-              <section id="contact" className="flex flex-col">
+              <section ref={contactRef} className="flex flex-col mb-36">
                 <h2 className="text-6xl font-bold tracking-tighter mb-8">Good News Everyone!</h2>
-                <p className="text-lg"><span className="font-bold">I am currently looking for new projects and companies to work with.</span> If you or someone you know wants to build their ideas or business through a website, app, etc. then please let me know by reaching out through the channels below.</p>
+                <p className="text-lg md:text-base"><span className="font-bold">I am currently looking for new projects and companies to work with.</span> If you or someone you know wants to build their ideas or business through a website, app, etc. then please let me know by reaching out through the channels below.</p>
                 <ul className="flex flex-col gap-1 mt-4">
                   <li>
                     <a href="mailto:bmfink87@gmail.com">
@@ -253,7 +263,12 @@ function App() {
               </section>
             </div>
 
-            <aside className="flex-none flex-col h-screen w-screen px-4 pb-12 overflow-y-scroll overflow-x-hidden scrollbar-hide snap-start md:w-2/5 md:border-l md:border-ccDark md:px-6 md:flex-shrink-1 lg:w-1/3">
+            {/* My work column */}
+            <aside ref={workColRef} className="flex-none flex-col h-screen w-screen pt-36 px-4 pb-12 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-hide snap-end relative md:w-2/5 md:border-l md:border-ccDark md:pt-10 md:px-6 lg:px-10">
+              <button onClick={() => handleXScroll(aboutColRef.current)} className="absolute flex gap-1 top-6 left-4 md:hidden">
+                <TbArrowCurveRight className="text-2xl -rotate-90 mt-2"/>
+                <p className="font-delicious text-2xl -rotate-12">About Me</p>
+              </button>
               <h3 className="w-fit bg-ccDark text-white text-2xl py-1.5 px-4 mt-12 mb-32 rounded-full">Featured Projects</h3>
               <Project
                 id={'01'}
@@ -298,7 +313,6 @@ function App() {
                 codeLink={'https://github.com/BryanMF87/world-flag-flashcards'}
               />
             </aside>
-          </div>
         </main>
       </div>
       

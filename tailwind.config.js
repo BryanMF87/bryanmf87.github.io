@@ -9,9 +9,15 @@ module.exports = {
         ccYellow: '#FFC802',
         ccDark: '#262521'
       },
-    },
-    fontFamily: {
-      'sans': ['Roboto', 'sans-serif'],
+      fontFamily: {
+        'sans': ['Roboto', 'sans-serif'],
+        delicious: ['"Delicious Handrawn"', 'serif']
+      },
+      fontSize: {
+        '10xl': '10rem',
+        '11xl': '12rem',
+        '12xl': '14rem'
+      }
     },
   },
   plugins: [
