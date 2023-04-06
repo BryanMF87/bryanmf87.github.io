@@ -13,18 +13,18 @@ const Project = ({id, name, description, techStack, liveLink, codeLink, fileLink
                     <Bullet key={index} skill={tech}/>
                 ))}
             </div>
-            <ul className="flex flex-col pt-4">
+            <ul className="flex flex-col pt-2 gap-2">
                 <li>
                     <a href={codeLink} target="_blank" rel="noopener noreferrer">
                         <button className="font-bold text-xl flex items-center gap-1 md:text-lg">
-                            View the code <FaAngleDoubleRight />
+                         <FaAngleDoubleRight /> View the code
                         </button>
                     </a>
                 </li>
                 <li>
                     <a href={liveLink} target="_blank" rel="noopener noreferrer">
                         <button className="font-bold text-xl flex items-center gap-1 md:text-lg">
-                            See the demo <FaAngleDoubleRight />
+                            <FaAngleDoubleRight /> See the demo
                         </button>
                     </a>
                 </li>
@@ -35,7 +35,7 @@ const Project = ({id, name, description, techStack, liveLink, codeLink, fileLink
                                 <li>
                                     <a href={fileLink} download>
                                         <button className="font-bold text-xl flex items-center gap-1 md:text-lg">
-                                            See the design <FaAngleDoubleRight />
+                                            <FaAngleDoubleRight /> See the design
                                         </button>
                                     </a>
                                 </li>
