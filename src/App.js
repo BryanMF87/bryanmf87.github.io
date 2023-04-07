@@ -134,11 +134,11 @@ function App() {
         <main ref={mainRef} className="w-full flex flex-row overflow-x-auto overflow-y-hidden scrollbar-hide snap-x snap-mandatory">
             {/* about column */}
             <div ref={aboutColRef} className="shrink-0 flex-col h-screen w-screen px-4 pb-24 overflow-y-scroll scroll-smooth scrollbar-hide snap-center relative sm:px-12 md:px-6 md:w-3/5 md:flex-shrink-1 lg:px-10">
-              <button onClick={() => handleXScroll(workColRef.current)} className="absolute flex gap-1 top-6 right-4 md:hidden">
+              <button onClick={() => handleXScroll(workColRef.current)} className="absolute flex gap-1 top-6 right-4 md:hidden transition duration-300 ease-in-out transform hover:translate-x-3">
                  <p className="font-delicious text-2xl rotate-12">My Work</p>
                  <TbArrowCurveRight className="text-2xl rotate-90 mt-5"/>
               </button>
-              <section ref={homeRef} className="h-full py-32 my-auto mr-auto md:h-auto md:pt-20">
+              <section ref={homeRef} className="h-full py-32 my-auto mr-auto sm:h-auto md:pt-20">
                 <div className='w-min mx-auto'>
                   <h1 className="text-8xl font-bold tracking-tight leading-none xs:text-9xl smer:text-10xl sm:text-11xl md:text-9xl lg:text-10xl xl:text-11xl">Hello World</h1>
                   <h3 className="text-3xl text-right tracking-tight max-w-xs ml-auto">I'll help you create awesome online content</h3>
@@ -240,21 +240,21 @@ function App() {
                 <ul className="flex flex-col gap-1 mt-4">
                   <li>
                     <a href="mailto:bmfink87@gmail.com">
-                      <button className="flex gap-2 items-center font-bold text-lg">
+                      <button className="flex gap-2 items-center font-bold text-lg transition duration-300 ease-in-out transform hover:translate-x-3">
                         <FaAngleDoubleRight/> Send me an email
                       </button>
                     </a>
                   </li>
                   <li>
                     <a href={resume} target="_blank" rel="noopener noreferrer">
-                      <button className="flex gap-2 items-center font-bold text-lg">
+                      <button className="flex gap-2 items-center font-bold text-lg transition duration-300 ease-in-out transform hover:translate-x-3">
                         <FaAngleDoubleRight/> Review my resume
                       </button>
                     </a>
                   </li>
                   <li>
                     <a href="https://www.linkedin.com/in/bfink777" target="_blank" rel="noopener noreferrer">
-                      <button className="flex gap-2 items-center font-bold text-lg">
+                      <button className="flex gap-2 items-center font-bold text-lg transition duration-300 ease-in-out transform hover:translate-x-3">
                         <FaAngleDoubleRight/> Find me on LinkedIn
                       </button>
                     </a>
@@ -265,7 +265,7 @@ function App() {
 
             {/* My work column */}
             <aside ref={workColRef} className="flex-none flex-col h-screen w-screen pt-20 px-4 pb-12 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-hide snap-center relative sm:px-6 md:w-2/5 md:border-l md:border-ccDark md:pt-10 lg:px-10">
-              <button onClick={() => handleXScroll(aboutColRef.current)} className="absolute flex gap-1 top-6 left-4 md:hidden">
+              <button onClick={() => handleXScroll(aboutColRef.current)} className="absolute flex gap-1 top-6 left-4 md:hidden transition duration-300 ease-in-out transform hover:translate-x-3">
                 <TbArrowCurveRight className="text-2xl -rotate-90 mt-2"/>
                 <p className="font-delicious text-2xl -rotate-12">About Me</p>
               </button>
@@ -282,7 +282,7 @@ function App() {
               <Project
                 id={'02'}
                 name={'Travel website'}
-                description={'I took a layered PSD mockup and built a fully responsive website with an extendable information accordion and an infinite card carousel component. The goal was to pick a complex website mock up to recreate so I could challenge my coding skills and for extra fun, make it mobile friendly. During this project I learned static site generation from Gatsby Js and styled components.'}
+                description={'I took a layered PSD mockup and built a fully responsive website with an extendable information accordion and a repeating card carousel component. The goal was to pick a complex website mock up to recreate so I could challenge my coding skills, and to make a desktop layout mobile friendly. During this project I learned static site generation from Gatsby Js and styled components.'}
                 techStack={['HTML', 'Styled components', 'JavaScript', 'React', 'Gatsby']}
                 liveLink={'https://travel-website-bryan.netlify.app/'}
                 codeLink={'https://github.com/BryanMF87/travel-website'}
@@ -307,8 +307,8 @@ function App() {
               <Project
                 id={'05'}
                 name={'World flag flashcards'}
-                description={'I took a layered PSD mockup and built a fully responsive website with an extendable information accordion and an infinite card carousel component. The goal was to pick a complex website mock up to recreate so I could challenge my coding skills and for extra fun, make it mobile friendly. During this project I learned static site generation from Gatsby Js and styled components.'}
-                techStack={['HTML', 'Styled components', 'JavaScript', 'React', 'Gatsby']}
+                description={`While watching the 2022 world cup I realized I didn't recognize a lot of international flags, so I created a world flag flashcard app with multiple choice options and score tracking. Its a simple app but fun app, created with HTML, CSS, vanilla JS, and a third party API from www.CountryFlagsAPI.com.`}
+                techStack={['HTML', 'CSS', 'JavaScript', 'API']}
                 liveLink={'https://bryanmf87.github.io/world-flag-flashcards'}
                 codeLink={'https://github.com/BryanMF87/world-flag-flashcards'}
               />
