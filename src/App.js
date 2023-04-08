@@ -147,8 +147,8 @@ function App() {
               <section ref={aboutRef} className="flex flex-col gap-4 mb-48">
                 <h2 className="text-6xl font-bold tracking-tighter mb-8">Websites, Apps, Designs, & custom code</h2>
                   <div className="flex flex-col gap-6 sm:grid sm:grid-cols-2 md:flex md:flex-col lg:grid lg:grid-cols-2">
-                    <p className="text-lg md:text-base"><span className="text-xl font-bold md:text-lg">Hi there! I'm Bryan Fink,</span> a front-end web developer with graphic design, and sales experience. I dream of building online content for people / companies that can change the world.</p>
-                    <p className="text-lg md:text-base"><span className="text-xl font-bold md:text-lg">Currently I am searching for a wonderful company to work with and learn from.</span> Outside of the office I enjoy nature hikes, martial arts, dancing, and action movies.</p>
+                    <p className="text-lg md:text-base"><span className="text-xl font-bold md:text-lg">Hi there! I'm Bryan Fink,</span> a front-end web developer with a graphic design and sales bcakground. I dream of building online content for people / companies that can change the world.</p>
+                    <p className="text-lg md:text-base"><span className="text-xl font-bold md:text-lg">Currently I am searching for a wonderful company to work with and learn from.</span> Outside of the office I enjoy nature hikes, martial arts, dancing, memes, and action movies.</p>
                   </div>
               </section>
               <section className="flex flex-col mb-48">
@@ -167,11 +167,11 @@ function App() {
                     company={'Square, inc'}
                     role={'Business development rep'}
                     disc={[
-                      'Fortune 500 tech company environment', 
-                      'Top 1% of all business development reps with 100% quota attainment',
+                      'Fortune 500 tech company environment',
+                      'Worked with clients to uncover a business plan for their goals and challenges',
+                      'Top 1% of all business development reps',
                       'Worked 100% remotely',
-                      'Quickly learned a new tech skillset',
-                      'Gained insight into tech world operations'
+                      'Quickly learned and applied a new tech skillset',
                     ]}
                   />
                   <Card
