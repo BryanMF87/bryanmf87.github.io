@@ -4,7 +4,7 @@ import Bullet from "./Bullet";
 const Project = ({id, name, description, techStack, liveLink, codeLink, fileLink}) => {
     
     return (
-        <div className="mb-48">
+        <div className="mb-32">
             <h2 className="text-6xl font-bold tracking-tighter">{id}</h2>
             <h3 className="text-3xl font-bold tracking-tight mb-4">{name}</h3>
             <p className="text-lg md:text-base">{description}</p>
