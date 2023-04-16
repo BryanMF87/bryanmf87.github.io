@@ -66,10 +66,14 @@ function App() {
 
   // My skills so far
   const techStack = ['HTML', 'CSS', 'SCSS', 'Bootstrap', 'Tailwind', 'Styled-components', 'JavaScript', 'React', 'NextJs', 'GatsbyJS', 'Git', 'Figma', 'Adobe creative suite'];
-
+  
+  
+  
   return (
+
     <div className="h-screen w-screen bg-ccYellow text-ccDark font-sans-roboto overflow-hidden">
-      <header className='h-16 flex items-center border-ccDark border-b'>
+
+      <header className='header h-16 flex items-center border-ccDark border-b'>
         <div onClick={()=> setShowNav(!showNav)} className="h-full flex justify-center items-center w-16 text-2xl border-ccDark border-r cursor-pointer hover:bg-ccDark hover:text-ccYellow md:hidden">
           <FaBars />
         </div>
@@ -138,17 +142,17 @@ function App() {
                  <p className="font-delicious text-2xl rotate-12">My Work</p>
                  <TbArrowCurveRight className="text-2xl rotate-90 mt-5"/>
               </button>
-              <section ref={homeRef} className="h-full py-32 my-auto mr-auto sm:h-auto md:pt-20">
-                <div className='w-min mx-auto'>
+              <section ref={homeRef} className="h-[calc(100vh-4rem)] flex flex-col">
+                <div className='w-min my-auto mx-auto'>
                   <h1 className="text-8xl font-bold tracking-tight leading-none xs:text-9xl smer:text-10xl sm:text-11xl md:text-9xl lg:text-10xl xl:text-11xl">Hello World</h1>
                   <h3 className="text-3xl text-right tracking-tight max-w-xs ml-auto">I'll help you create awesome online content</h3>
                 </div>
               </section>
-              <section ref={aboutRef} className="flex flex-col gap-4 mb-48">
+              <section ref={aboutRef} className="flex flex-col gap-4 mt-24 mb-48">
                 <h2 className="text-6xl font-bold tracking-tighter mb-8">Websites, Apps, Designs, & custom code</h2>
                   <div className="flex flex-col gap-6 sm:grid sm:grid-cols-2 md:flex md:flex-col lg:grid lg:grid-cols-2">
-                    <p className="text-lg md:text-base"><span className="text-xl font-bold md:text-lg">Hi there! I'm Bryan Fink,</span> a front-end web developer with a graphic design and sales bcakground. I dream of building online content for people / companies that can change the world.</p>
-                    <p className="text-lg md:text-base"><span className="text-xl font-bold md:text-lg">Currently I am searching for a wonderful company to work with and learn from.</span> Outside of the office I enjoy nature hikes, martial arts, dancing, memes, and action movies.</p>
+                    <p className="text-lg md:text-base"><span className="text-xl font-bold md:text-lg">Hi there! I'm Bryan Fink,</span> a front-end developer with a background in design and sales. I dream of building online content for people / companies that can change the world.</p>
+                    <p className="text-lg md:text-base"><span className="text-xl font-bold md:text-lg">Currently I am searching for a wonderful company to work with and learn from.</span> Outside of the office I enjoy nature hikes, Jiujitsu, Bachata, memes, and movies.</p>
                   </div>
               </section>
               <section className="flex flex-col mb-48">
@@ -234,7 +238,7 @@ function App() {
                   />
                 </div>
               </section>
-              <section ref={contactRef} className="flex flex-col mb-36">
+              <section ref={contactRef} className="flex flex-col mb-12">
                 <h2 className="text-6xl font-bold tracking-tighter mb-8">Good News Everyone!</h2>
                 <p className="text-lg md:text-base"><span className="font-bold">I am currently looking for new projects and companies to work with.</span> If you or someone you know wants to build their ideas or business through a website, app, etc. then please let me know by reaching out through the channels below.</p>
                 <ul className="flex flex-col gap-1 mt-4">
@@ -264,7 +268,7 @@ function App() {
             </div>
 
             {/* My work column */}
-            <aside ref={workColRef} className="flex-none flex-col h-screen w-screen pt-20 px-4 pb-12 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-hide snap-center relative sm:px-6 md:w-2/5 md:border-l md:border-ccDark md:pt-10 lg:px-10">
+            <aside ref={workColRef} className="flex-none flex-col h-screen w-screen pt-20 px-4 pb-2 overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-hide snap-center relative sm:px-6 md:w-2/5 md:border-l md:border-ccDark md:pt-10 lg:px-10">
               <button onClick={() => handleXScroll(aboutColRef.current)} className="absolute flex gap-1 top-6 left-4 md:hidden transition duration-300 ease-in-out transform hover:translate-x-3">
                 <TbArrowCurveRight className="text-2xl -rotate-90 mt-2"/>
                 <p className="font-delicious text-2xl -rotate-12">About Me</p>
@@ -275,7 +279,7 @@ function App() {
                 name={'Scumm Bar Brawl'}
                 description={'This homage to the Great Monkey Island web game series recreates the insult sword battling mini-game. Since building games require far more logical thinking than standard websites, this was a great chance to challenge my JavaScript programming skills while learning more advanced React hooks, promises, and SCSS.'}
                 techStack={['HTML', 'SCSS', 'JavaScript', 'React']}
-                liveLink={'https://bryanfink.dev/scumm-bar-brawl/'}
+                liveLink={'https://bryanfink.dev/scumm-bar-brawl'}
                 codeLink={'https://github.com/BryanMF87/scumm-bar-brawl'}
               >
               </Project>
@@ -284,7 +288,7 @@ function App() {
                 name={'Travel website'}
                 description={'I took a layered PSD mockup and built a fully responsive website with an extendable information accordion and a repeating card carousel component. The goal was to pick a complex website mock up to recreate so I could challenge my coding skills, and to make a desktop layout mobile friendly. During this project I learned static site generation from Gatsby Js and styled components.'}
                 techStack={['HTML', 'Styled components', 'JavaScript', 'React', 'Gatsby']}
-                liveLink={'https://travel-website-bryan.netlify.app/'}
+                liveLink={'https://bryanfink.dev/travel-website'}
                 codeLink={'https://github.com/BryanMF87/travel-website'}
                 fileLink={psdFile}
               />
