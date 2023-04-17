@@ -90,7 +90,7 @@ function App() {
       </header>
 
       <div className="w-full flex">
-        <nav className={`h-screen w-16 flex-none pt-8 align-center border-r border-ccDark bg-ccYellow fixed z-10 transition-transform ${showNav ? "translate-X-16" : "-translate-x-16"} md:block`}>
+        <nav className={`h-screen w-16 flex-none pt-8 align-center border-r border-ccDark bg-ccYellow fixed z-10 transition-transform ${showNav ? "translate-X-16" : "-translate-x-16"} md:relative`}>
           <ul className="flex flex-col gap-10">
             <li className="flex flex-col mx-auto">
                 <button onClick={()=> handleYScroll(homeRef.current)} className="hover:opacity-50 hover:scale-95 transition-transform ease-in-out">
@@ -144,7 +144,7 @@ function App() {
               </button>
               <section ref={homeRef} className="h-[calc(100vh-4rem)] flex flex-col">
                 <div className='w-min my-auto mx-auto'>
-                  <h1 className="text-8xl font-bold tracking-tight leading-none xs:text-9xl smer:text-10xl sm:text-11xl md:text-9xl lg:text-10xl xl:text-11xl">Hello World</h1>
+                  <h1 className="text-8xl font-bold tracking-tight leading-none xs:text-9xl smer:text-10xl sm:text-11xl md:text-9xl lg:text-10xl xl:text-11xl"><span className="-ml-3">Hello</span> World</h1>
                   <h3 className="text-3xl text-right tracking-tight max-w-xs ml-auto">I'll help you create awesome online content</h3>
                 </div>
               </section>
