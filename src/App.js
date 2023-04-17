@@ -43,13 +43,13 @@ function App() {
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
   const handleYScroll = (target) => {
-    if(mainRef.current.offsetLeft > 0) {
+    if(mainRef.current.scrollLeft > 64) {
       handleXScroll(aboutColRef.current)
     }
     aboutColRef.current.scrollTo({ 
       top: target.offsetTop,
       behavior: 'smooth'
-    })
+    });
   };
 
   
@@ -90,35 +90,35 @@ function App() {
       </header>
 
       <div className="w-full flex">
-        <nav className={`h-screen w-16 flex-none pt-8 align-center border-r border-ccDark bg-ccYellow ${showNav ? "visible" : "hidden"}`}>
+        <nav className={`h-screen w-16 flex-none pt-8 align-center border-r border-ccDark bg-ccYellow fixed z-10 transition-transform ${showNav ? "translate-X-16" : "-translate-x-16"} md:block`}>
           <ul className="flex flex-col gap-10">
             <li className="flex flex-col mx-auto">
-                <button onClick={()=> handleYScroll(homeRef.current)} className="hover:opacity-50">
+                <button onClick={()=> handleYScroll(homeRef.current)} className="hover:opacity-50 hover:scale-95 transition-transform ease-in-out">
                   <FaAngellist size="1.75rem" className="mx-auto"/>
                   <p className="text-xs text-center mt-1 font-semibold">Home</p>
                 </button>
             </li>
             <li className="flex flex-col mx-auto">
-                <button onClick={()=> handleYScroll(aboutRef.current)} className="hover:opacity-50">
+                <button onClick={()=> handleYScroll(aboutRef.current)} className="hover:opacity-50 hover:scale-95 transition-transform ease-in-out">
                   <FaUserAstronaut size="1.75rem" className="mx-auto"/>
                   <p className="text-xs text-center mt-1 font-semibold">About</p>
                 </button>
             </li>
             <li className="flex flex-col mx-auto">
-                <button onClick={()=> handleYScroll(contactRef.current)} className="hover:opacity-50">
+                <button onClick={()=> handleYScroll(contactRef.current)} className="hover:opacity-50 hover:scale-95 transition-transform ease-in-out">
                   <FaViber size="1.75rem" className="mx-auto"/>
                   <p className="text-xs text-center mt-1 font-semibold">Contact</p>
                 </button>
             </li>
             <li className="flex flex-col mx-auto md:hidden">
-                <button onClick={()=> handleXScroll(workColRef.current)} className="hover:opacity-50">
+                <button onClick={()=> handleXScroll(workColRef.current)} className="hover:opacity-50 hover:scale-95 transition-transform ease-in-out">
                   <BsPersonWorkspace size="1.75rem" className="mx-auto"/>
                   <p className="text-xs text-center mt-1 font-semibold">Work</p>
                 </button>
             </li>
             <li className="flex flex-col mx-auto">
               <a href={resume} target="_blank" rel="noopener noreferrer">
-                <button className="hover:opacity-50">
+                <button className="hover:opacity-50 hover:scale-95 transition-transform ease-in-out">
                   <BiGlassesAlt size="1.75rem" className="mx-auto"/>
                   <p className="text-xs text-center mt-1 font-semibold">Resume</p>
                 </button>
@@ -126,7 +126,7 @@ function App() {
             </li>
             <li className="flex flex-col mx-auto">
               <a href="https://github.com/BryanMF87" target="_blank" rel="noopener noreferrer">
-                <button className="hover:opacity-50">
+                <button className="hover:opacity-50 hover:scale-95 transition-transform ease-in-out">
                   <FaGithub size="1.75rem" className="mx-auto"/>
                   <p className="text-xs text-center mt-1 font-semibold">Github</p>
                 </button>
@@ -238,25 +238,25 @@ function App() {
                   />
                 </div>
               </section>
-              <section ref={contactRef} className="flex flex-col mb-12">
+              <section ref={contactRef} className="flex flex-col mb-28">
                 <h2 className="text-6xl font-bold tracking-tighter mb-8">Good News Everyone!</h2>
                 <p className="text-lg md:text-base"><span className="font-bold">I am currently looking for new projects and companies to work with.</span> If you or someone you know wants to build their ideas or business through a website, app, etc. then please let me know by reaching out through the channels below.</p>
                 <ul className="flex flex-col gap-1 mt-4">
-                  <li>
+                  <li className="w-fit">
                     <a href="mailto:bmfink87@gmail.com">
                       <button className="flex gap-2 items-center font-bold text-lg transition duration-300 ease-in-out transform hover:translate-x-3">
                         <FaAngleDoubleRight/> Send me an email
                       </button>
                     </a>
                   </li>
-                  <li>
+                  <li className="w-fit">
                     <a href={resume} target="_blank" rel="noopener noreferrer">
                       <button className="flex gap-2 items-center font-bold text-lg transition duration-300 ease-in-out transform hover:translate-x-3">
                         <FaAngleDoubleRight/> Review my resume
                       </button>
                     </a>
                   </li>
-                  <li>
+                  <li className="w-fit">
                     <a href="https://www.linkedin.com/in/bfink777" target="_blank" rel="noopener noreferrer">
                       <button className="flex gap-2 items-center font-bold text-lg transition duration-300 ease-in-out transform hover:translate-x-3">
                         <FaAngleDoubleRight/> Find me on LinkedIn
