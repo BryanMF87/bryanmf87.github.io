@@ -241,24 +241,24 @@ function App() {
               <section ref={contactRef} className="flex flex-col mb-28">
                 <h2 className="text-6xl font-bold tracking-tighter mb-8">Good News Everyone!</h2>
                 <p className="text-lg md:text-base"><span className="font-bold">I am currently looking for new projects and companies to work with.</span> If you or someone you know wants to build their ideas or business through a website, app, etc. then please let me know by reaching out through the channels below.</p>
-                <ul className="flex flex-col gap-1 mt-4">
+                <ul className="flex flex-col gap-2 mt-6">
                   <li className="w-fit">
                     <a href="mailto:bmfink87@gmail.com">
-                      <button className="flex gap-2 items-center font-bold text-lg transition duration-300 ease-in-out transform hover:translate-x-3">
+                      <button className="flex gap-2 items-center font-bold text-xl transition duration-300 ease-in-out transform hover:translate-x-3 md:text-lg">
                         <FaAngleDoubleRight/> Send me an email
                       </button>
                     </a>
                   </li>
                   <li className="w-fit">
                     <a href={resume} target="_blank" rel="noopener noreferrer">
-                      <button className="flex gap-2 items-center font-bold text-lg transition duration-300 ease-in-out transform hover:translate-x-3">
+                      <button className="flex gap-2 items-center font-bold text-xl transition duration-300 ease-in-out transform hover:translate-x-3 md:text-lg">
                         <FaAngleDoubleRight/> Review my resume
                       </button>
                     </a>
                   </li>
                   <li className="w-fit">
                     <a href="https://www.linkedin.com/in/bfink777" target="_blank" rel="noopener noreferrer">
-                      <button className="flex gap-2 items-center font-bold text-lg transition duration-300 ease-in-out transform hover:translate-x-3">
+                      <button className="flex gap-2 items-center font-bold text-xl transition duration-300 ease-in-out transform hover:translate-x-3 md:text-lg">
                         <FaAngleDoubleRight/> Find me on LinkedIn
                       </button>
                     </a>
