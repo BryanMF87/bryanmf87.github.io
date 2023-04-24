@@ -171,23 +171,21 @@ function App() {
                     company={'Square, inc'}
                     role={'Business development rep'}
                     disc={[
-                      'Fortune 500 tech company environment',
-                      'Worked with clients to uncover a business plan for their goals and challenges',
-                      'Top 1% of all business development reps',
-                      'Worked 100% remotely',
-                      'Quickly learned and applied a new tech skillset',
+                      'Identified business owner challenges and interest in Square’s products',
+                      'Ranked amongst top 1% of all BDRs with a 100% quota attainment rate',
+                      'Selected for data-driven development team to create new sales technologies',
+                      'Resulted in increased sales call volume and sales efficiency'
                     ]}
                   />
                   <Card
-                    date={'April 2014 - June 2020'}
+                    date={'April 2017 - June 2020'}
                     company={'Bluegrass Book Buyers'}
                     role={'Web developer'}
                     disc={[
-                      'Start-up company environment',
-                      'Multitasked several roles at once',
-                      'Worked 100% remotely',
-                      'Created / maintained online website and training content',
-                      'Used Sketch, Wix, HTML, CSS, JavaScript'
+                      'Created and maintained company website and online training portal',
+                      'Utilized Sketch, Wix, HTML, CSS, and JavaScript',
+                      'Decreased recruit training time by 66% and increased retention by 30%',
+                      'Fully remote while multitasking several roles in a fast-paced environment'
                     ]}
                   />
                   <Card
