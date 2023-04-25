@@ -65,7 +65,7 @@ function App() {
 
 
   // My skills so far
-  const techStack = ['HTML', 'CSS', 'SCSS', 'Bootstrap', 'Tailwind', 'Styled-components', 'JavaScript', 'React', 'NextJs', 'GatsbyJS', 'Git', 'Figma', 'Adobe creative suite'];
+  const techStack = ['HTML', 'CSS', 'SCSS', 'Bootstrap', 'Tailwind', 'Styled-components', 'JavaScript', 'TypeScript', 'React', 'NextJs', 'GatsbyJS', 'Jest', 'Git', 'Figma', 'Adobe creative suite'];
   
   
   
