@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && npm run deploy-gh-pages",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy-gh-pages": "gh-pages -d .next"
   },
   "dependencies": {
     "@portabletext/react": "^3.0.0",
