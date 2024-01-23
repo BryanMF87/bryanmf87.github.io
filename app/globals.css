@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body * {
+  transition: all;
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet {
+  background-color: #ccc;
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet:hover {
+  background-color: #f5f5f5;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #FF1B6B;
+}
+
+.text-stroke-gray {
+   font-weight: 600;
+   -webkit-text-stroke: 1px #777; /* WebKit/Blink browsers */
+   text-stroke: 1px #777; /* Standard syntax */
+}
+
+button, a {
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover, a:hover {
+  transform: translateY(-2px);
+}
+
+@keyframes infiniteRotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.rotate {
+  animation: 2s infiniteRotate linear infinite;
+}
+
+@keyframes infiniteSlide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-96.625rem);
+  }
+}
+
+.tech-slide {
+  animation: 20s infiniteSlide linear infinite;
+}
+
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+}
