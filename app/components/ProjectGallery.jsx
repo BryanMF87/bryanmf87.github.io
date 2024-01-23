@@ -33,7 +33,6 @@ const  ProjectGallery = () => {
             initial={{ opacity: 0, x: -20, rotate: 90 }}
             whileInView={{ opacity: 1, x:0, rotate: 90 }}
             transition={{ duration: 0.35 }}
-            viewport={{ once: true }}
             className="absolute top-1/2 -left-8 shrink-0 text-ccGray2 font-bold tracking-tight hidden md:block md:text-4xl lg:text-5xl lg:-left-12"
           >
             Portfolio
@@ -59,7 +58,6 @@ const  ProjectGallery = () => {
                 variants={fadeInAnimation}
                 initial="initial"
                 whileInView="animate"
-                viewport={{ once: true }}
                 custom={index}
               >
                 <Link
