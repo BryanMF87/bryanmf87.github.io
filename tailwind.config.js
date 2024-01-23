@@ -1,31 +1,35 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'xs': '540px',
+    },
     extend: {
       colors: {
-        ccYellow: '#FFC802',
-        ccDark: '#262521'
-      },
-      fontFamily: {
-        'sans': ['Roboto', 'sans-serif'],
-        delicious: ['"Delicious Handrawn"', 'serif']
-      },
-      fontSize: {
-        '10xl': '10rem',
-        '11xl': '12rem',
-        '12xl': '14rem'
+        ccHighlight: '#FF1B6B', // hot pink
+        ccOffBlack: '#171717',
+        ccOffWhite: '#f5f5f5',
+        ccGray: '#999',
+        ccGray2: '#444',
+        ccGray3: '#212121',
       },
       screens: {
-        'xs': '375px',
-        'smer': '500px'
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+      },
+      maxWidth: {
+        '8xl': '1440px',
+        '9xl': '1920px'
       },
     },
   },
-  plugins: [
-    require('tailwind-scrollbar-hide')
-  ],
+  plugins: [],
 }
-
