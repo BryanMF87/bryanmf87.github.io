@@ -69,6 +69,8 @@ const  ProjectGallery = () => {
                   <Image
                     src={project.media.cardImage.url}
                     alt={project.media.cardImage.alt}
+                    width={400}
+                    height={550}
                     className="h-48 w-full sm:h-48 object-cover rounded-t-xl"
                   />
                   <div className="flex flex-col w-full p-4 text-ccOffBlack bg-ccOffWhite rounded-b-xl">

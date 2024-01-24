@@ -35,7 +35,6 @@ const Testimonials = () => {
                                     initial={{ opacity: 0, y:10 }}
                                     whileInView={{ opacity: 1, y:0 }}
                                     transition={{ duration: 0.15, delay:0.05}}
-                                    viewport={{ once: true }}
                                 >
                                     <Image
                                         src={testimonial.image} 
@@ -51,7 +50,6 @@ const Testimonials = () => {
                                     initial={{ opacity: 0, y:20 }}
                                     whileInView={{ opacity: 1, y:0 }}
                                     transition={{ duration: 0.15}}
-                                    viewport={{ once: true }}
                                     className="absolute bottom-1 z-[-2] bg-ccHighlight w-[13.95rem] h-24 mx-auto rounded-xl md:w-[99.5%] lg:h-28"
                                 ></MotionDiv>
 

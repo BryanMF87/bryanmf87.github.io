@@ -17,6 +17,7 @@ const FAQ = () => {
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.15 }}
+      viewport={{ once: true }}
       className="md:order-2 md:w-1/2"
     >
         <h2 className="font-medium text-3xl text-ccOffWhite">Frequently Asked Questions</h2>
