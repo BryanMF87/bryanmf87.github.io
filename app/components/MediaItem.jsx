@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const MediaItem = ({media, type}) => {
 
-    const heightClass = type === "full" ? "h-48 sm:h-auto" : "h-48 sm:h-72";
+    const heightClass = type === "full" ? "h-72 sm:h-auto" : "h-72 lg:h-96";
 
 
   if (media.type === 'video') {

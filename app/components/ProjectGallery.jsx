@@ -6,14 +6,6 @@ import Link from 'next/link';
 import { MotionDiv, MotionP } from "../lib/motion";
 import Image from "next/image";
 
-const fadeInAnimation = {
-  initial: { opacity: 0, y: 20 },
-  animate: (index)=> ({ 
-    opacity: 1, 
-    y: 0, 
-    transition: { duration: 0.35, delay: 0.1 * index }
-  }),
-}
 
 const  ProjectGallery = () => {
   const [subject, setSubject] = useState('development');
@@ -54,31 +46,30 @@ const  ProjectGallery = () => {
           {/* projects displayed */}
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-6 md:grid-cols-3 sm:gap-6">
             {displayProjects.map((project, index) => (
-              <MotionDiv
-                key={index}
-                variants={fadeInAnimation}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true }}
-                custom={index}
-              >
-                <Link
-                  href={`/projects/${project.id}`}
-                  className="w-full mx-auto rounded-xl group hover:shadow-xl"
+                <MotionDiv
+                  key={project.id}
+                  initial={{ opacity : 0 }}
+                  whileInView={{ opacity : 1 }}
+                  transition={{ delay: 0.1 * index}}
+                  exit={{ opacity : 0 }}
                 >
-                  <Image
-                    src={project.media.cardImage.url}
-                    alt={project.media.cardImage.alt}
-                    width={400}
-                    height={550}
-                    className="h-48 w-full sm:h-48 object-cover rounded-t-xl"
-                  />
-                  <div className="flex flex-col w-full p-4 text-ccOffBlack bg-ccOffWhite rounded-b-xl">
-                    <span className="text-ccGray text-sm font-medium leading-4 group-hover:text-ccHighlight">{project.subtitle}</span>
-                    <h3 className="text-lg font-bold leading-5 mt-1 sm:text-base sm:leading-6  md:leading-[1.25rem]">{project.title}</h3>
-                  </div>  
-                </Link>
-              </MotionDiv>
+                  <Link
+                    href={`/projects/${project.id}`}
+                    className="w-full mx-auto rounded-xl group hover:shadow-xl"
+                  >
+                    <Image
+                      src={project.media.cardImage.url}
+                      alt={project.media.cardImage.alt}
+                      width={400}
+                      height={550}
+                      className="h-48 w-full sm:h-48 object-cover rounded-t-xl"
+                    />
+                    <div className="flex flex-col w-full p-4 text-ccOffBlack bg-ccOffWhite rounded-b-xl">
+                      <span className="text-ccGray text-sm font-medium leading-4 group-hover:text-ccHighlight">{project.subtitle}</span>
+                      <h3 className="text-lg font-bold leading-5 mt-1 sm:text-base sm:leading-6  md:leading-[1.25rem]">{project.title}</h3>
+                    </div>  
+                  </Link>
+                </MotionDiv>
             ))}
           </div>
         </div>

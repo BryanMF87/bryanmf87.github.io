@@ -89,7 +89,7 @@ export const projectData = [
         },
       },
       quote: {
-        quote: "That&apos;s the second biggest monkey head I&apos;ve ever seen!",
+        quote: "That's the second biggest monkey head I've ever seen!",
         author: "Guybrush Threepwood"
       }
     },
@@ -175,12 +175,14 @@ export const projectData = [
           alt: "Super Clean landing page"
         },
         fifthMedia: {
-          type: "video",
-          url: "/projects/super-clean/officemobile.mp4",
+          type: "image",
+          url: "/projects/super-clean/kitchen.jpg",
+          alt: "Super Clean kitchen"
         },
         sixthMedia: {
-          type: "video",
-          url: "/projects/super-clean/homepagemobile.mp4",
+          type: "image",
+          url: "/projects/super-clean/livingroom.jpg",
+          alt: "Super Clean living room"
         },
         seventhMedia: {
           type: "image",
@@ -200,7 +202,7 @@ export const projectData = [
       description: "A Crypto company in need of a graphic designer for their digital ads, posters, and weekly newsletter",
       category: "design",
       summary: "ARCrypto teaches their clients how to navigate the cryptocurrency market and promote themselves through digital ads and an email newsletter. They had tried a few designers but were having trouble finding someone who could create quality content that worked within their visual brand guidelines.",
-      outcome: "After partnering with their marketing team, ARCrypto&apos;s digital ads now feature eye-catching designs that convert users across all major social media advertising platforms, and an email newsletter filled with engaging content that captivates their audience. The new designs align seamlessly with ARCrypto&apos;s brand identity, providing a cohesive and professional image for their educational services in the dynamic world of cryptocurrency.",
+      outcome: "After partnering with their marketing team, ARCrypto's digital ads now feature eye-catching designs that convert users across all major social media advertising platforms, and an email newsletter filled with engaging content that captivates their audience. The new designs align seamlessly with ARCrypto's brand identity, providing a cohesive and professional image for their educational services in the dynamic world of cryptocurrency.",
       tools: ['Figma'],
       deliverables: ['Graphic Design', 'Research', 'Copywriting'],
       media: {

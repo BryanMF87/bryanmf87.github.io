@@ -78,14 +78,14 @@ const Project = ({ params }) => {
           <p className="mt-8 text-4xl leading-[140%] max-w-3xl">{selectedProject.description}</p>
 
 
-          <div className="flex flex-col gap-14 max-w-8xl mx-auto">
+          <div className="flex flex-col gap-14 max-w-8xl mx-auto md:gap-20 lg:gap-40">
             {selectedProject.media.firstMedia && (
               <MotionDiv
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duraction: 0.35 }}
                 viewport={{ once: true }}
-                className="flex justify-center items-center my-20"
+                className="flex justify-center items-center mt-20"
               >
                 <MediaItem media={selectedProject.media.firstMedia} type="full" />
               </MotionDiv>
@@ -112,7 +112,7 @@ const Project = ({ params }) => {
 
 
 
-            <div className="flex flex-col text-center gap-6 max-w-2xl mx-auto pt-40 pb-20">
+            <div className="flex flex-col text-center gap-6 max-w-2xl mx-auto py-40">
               <p className="text-3xl leading-relaxed">&quot;{selectedProject.quote.quote}&quot;</p>
               <p className="text-2xl text-ccHighlight">{selectedProject.quote.author}</p>
             </div>
@@ -123,7 +123,7 @@ const Project = ({ params }) => {
             {/* second media is ALWAYS accompanied by third media */}
 
             {selectedProject.media.secondMedia && (
-              <div className="flex flex-col justify-center items-center gap-10 my-20 sm:flex-row lg:gap-14">
+              <div className="flex flex-col justify-center items-center gap-10 sm:flex-row lg:gap-14">
                 <MotionDiv
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -178,7 +178,7 @@ const Project = ({ params }) => {
             {/* fifth media is ALWAYS accompanied by sixth media */}
 
             {selectedProject.media.fifthMedia && (
-              <div className="flex flex-col justify-center items-center gap-10 sm:flex-row lg:gap-14">
+              <div className="flex flex-col justify-center items-center gap-14 sm:flex-row">
                 <MotionDiv
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
