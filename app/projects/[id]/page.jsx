@@ -70,8 +70,25 @@ const Project = ({ params }) => {
               <h1 className="text-6xl font-bold lg:text-7xl">{selectedProject.title}</h1>
             </div>
             <div className="flex mt-6 gap-6 md:justify-end md:items-end md:flex-col md:mt-0 md:w-1/2">
-              {selectedProject.demo && (<Link href={`/${selectedProject.id}`} className="flex gap-2 items-center w-fit rounded-lg py-3 px-4 font-semibold bg-ccHighlight">View Online</Link>)}
-              {selectedProject.github && (<Link href={`https://github.com/${selectedProject.id}`} className="flex gap-2 items-center w-fit rounded-lg py-3 px-4 font-semibold bg-ccHighlight">See Code</Link>)}
+              {selectedProject.demo && (
+                <Link 
+                  href={selectedProject.demo}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex gap-2 items-center w-fit rounded-lg py-3 px-4 font-semibold bg-ccHighlight"
+                >
+                  View Online
+                </Link>
+              )}
+              {selectedProject.github && (
+                <Link 
+                  href={selectedProject.github}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex gap-2 items-center w-fit rounded-lg py-3 px-4 font-semibold bg-ccHighlight"
+                >
+                  See Code
+                </Link>)}
             </div>
           </div>
 
@@ -212,8 +229,32 @@ const Project = ({ params }) => {
               </MotionDiv>
             )}
           </div>
-
         </div>
+
+        { (selectedProject.demo || selectedProject.github) && (
+          <section className="bg-black py-20 flex flex-col gap-6 justify-center items-center sm:flex-row sm:py-40">
+            {selectedProject.demo && (
+              <Link 
+                href={selectedProject.demo}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-fit rounded-lg py-4 px-10 text-2xl font-semibold border border-solid border-ccOffWhite"
+              >
+                View Online
+              </Link>
+            )}
+            {selectedProject.github && (
+              <Link 
+                href={selectedProject.github}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-fit rounded-lg py-4 px-10 text-2xl font-semibold border border-solid border-ccOffWhite"
+              >
+                See Code
+              </Link>
+            )}
+          </section>
+        )}
 
         <ProjectGallery/>
       </div>

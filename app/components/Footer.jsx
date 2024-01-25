@@ -6,7 +6,7 @@ import { MotionP } from '../lib/motion';
 
 const Footer = () => {
   return (
-      <section id="contact"  className="bg-ccOffBlack text-ccOffWhite">
+      <section className="bg-ccOffBlack text-ccOffWhite">
         <div className="relative px-6 sm:px-12 md:px-20 lg:px-40 lg:max-w-8xl lg:mx-auto">
         <MotionP
           initial={{ opacity: 0, x: -20, rotate: 90 }}
@@ -19,7 +19,7 @@ const Footer = () => {
         </MotionP>
           <div className="py-20 md:flex md:gap-10 xl:gap-14">
             <FAQ />
-            <div className="mt-20 text-ccOffWhite text-center md:text-left md:mt-0 md:order-1 md:w-1/2">
+            <div id="Contact" className="mt-20 text-ccOffWhite text-center md:text-left md:mt-0 md:order-1 md:w-1/2">
               <h2 className="font-bold text-6xl leading-tight lg:text-7xl">Ready? Set, <span className="text-ccHighlight">Go!</span></h2>
                 <p className="text-ccGray mt-4 mb-8">Thanks for visiting my website. I am currently open to freelance projects and full-time work. Please use the button below to reach me. I will respond back ASAP!</p>
                 <div className="flex flex-col gap-6 md:flex-row">

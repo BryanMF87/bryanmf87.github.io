@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div className="bg-ccOffBlack disable-scroll">
-        <section id="home" className="relative z-10 flex justify-center items-center h-max px-6 md:px-0 lg:max-w-8xl lg:mx-auto">
+        <section id="Home" className="relative z-10 flex justify-center items-center h-max px-6 md:px-0 lg:max-w-8xl lg:mx-auto">
 
         <MotionP
           initial={{ opacity: 0, x: -20, rotate: 90 }}
@@ -83,10 +83,10 @@ const Home = () => {
             <div className="relative z-30 -mt-10 text-center w-full md:-mt-14">
               <h1 className="font-bold text-7xl text-ccOffWhite tracking-tight drop-shadow-lg md:text-6xl lg:text-7xl">Frontend Developer</h1>
               <div className="flex flex-col gap-6 mt-10 px-6 sm:flex-row justify-center md:mt-6">
-                <a href="#contact" className="p-5 bg-ccHighlight text-white text-xl font-medium rounded-md sm:text-lg sm:px-10 md:w-fit md:text-lg md:py-3 md:px-5">
+                <a href="#Contact" className="p-5 bg-ccHighlight text-white text-xl font-medium rounded-md sm:text-lg sm:px-10 md:w-fit md:text-lg md:py-3 md:px-5">
                   Start a project
                 </a>
-                <a href="#work" className="p-5 text-white text-xl font-medium rounded-md border border-solid border-ccOffWhite sm:text-lg sm:px-10 md:w-fit md:text-lg md:py-3 md:px-5">
+                <a href="#Work" className="p-5 text-white text-xl font-medium rounded-md border border-solid border-ccOffWhite sm:text-lg sm:px-10 md:w-fit md:text-lg md:py-3 md:px-5">
                   View my work
                 </a>
               </div>
@@ -98,7 +98,7 @@ const Home = () => {
           <TechStackSlider />
         </section>
 
-        <section id="about" className="relative py-40 px-6 sm:px-12 md:px-20 lg:px-40 lg:max-w-8xl lg:mx-auto">
+        <section id="About" className="relative py-40 px-6 sm:px-12 md:px-20 lg:px-40 lg:max-w-8xl lg:mx-auto">
           <p className="absolute top-60 -left-10 shrink-0 transform rotate-90 text-ccGray2 font-bold tracking-tight hidden md:block md:top-1/2 md:text-4xl lg:text-5xl lg:-left-[3.75rem]">About Me</p>
           <h2 className="text-center text-[1.5rem] leading-10 text-ccOffWhite md:text-[1.55rem] md:leading-normal">Hello! I&apos;m Bryan, <span className="text-ccHighlight">designer & frontend developer for businesses looking to grow and modernize.</span> I will turn your ideas into reality by connecting your message to your clients in a meaningful, visual way.</h2>
           <div className="flex flex-col gap-20 py-20 text-center max-w-xs mx-auto md:grid md:grid-cols-3 md:gap-10 md:text-left md:max-w-full">

@@ -19,7 +19,7 @@ const  ProjectGallery = () => {
   }, [subject]);
 
   return (
-      <section id="work" className="bg-ccGray3">
+      <section id="Work" className="bg-ccGray3">
         <div className="relative py-28 px-6 sm:px-12 md:px-20 lg:px-40 lg:max-w-8xl lg:mx-auto">
           <MotionP
             initial={{ opacity: 0, x: -20, rotate: 90 }}

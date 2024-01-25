@@ -12,7 +12,7 @@ import { MotionDiv, MotionP } from '../lib/motion';
 const Testimonials = () => {
 
     return (
-        <div id="testimonials" className="relative px-6 py-40 sm:px-12 md:px-20 lg:max-w-8xl lg:mx-auto">
+        <div id="Testimonials" className="relative px-6 py-40 sm:px-12 md:px-20 lg:max-w-8xl lg:mx-auto">
              <MotionP
                 initial={{ opacity: 0, x: -20, rotate: 90 }}
                 whileInView={{ opacity: 1, x:0, rotate: 90 }}
