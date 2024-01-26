@@ -7,7 +7,7 @@ import { MotionP } from '../lib/motion';
 const Footer = () => {
   return (
       <section className="bg-ccOffBlack text-ccOffWhite">
-        <div className="relative px-6 sm:px-12 md:px-20 lg:px-40 lg:max-w-8xl lg:mx-auto">
+        <div className="relative px-6 sm:px-12 md:px-20 lg:px-40 lg:max-w-9xl lg:mx-auto">
         <MotionP
           initial={{ opacity: 0, x: -20, rotate: 90 }}
           whileInView={{ opacity: 1, x:0, rotate: 90 }}
@@ -37,8 +37,8 @@ const Footer = () => {
         </div>
 
           <footer className="text-center text-lg text-ccOffWhite border-t border-solid border-ccGray py-5">
-            <div className="flex flex-col gap-2 px-6 sm:px-12 md:px-20 md:flex-row md:justify-between md:items-center lg:px-40 lg:max-w-8xl lg:mx-auto">
-              <p className="text-white text-base">©2023, built with love by <span className="text-pink-600">Bryan Fink</span></p>
+            <div className="flex flex-col gap-2 px-6 sm:px-12 md:px-20 md:flex-row md:justify-between md:items-center lg:px-40 lg:max-w-9xl lg:mx-auto">
+              <p className="text-white text-base">©2024, built with love by <span className="text-pink-600">Bryan Fink</span></p>
               <div className="flex gap-10 mx-auto text-3xl py-4 px-6 rounded-lg md:mx-0 md:py-2 md:px-0 md:gap-6 md:text-xl">
                 <a href="https://www.instagram.com/thebryanfink/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                 <a href="https://www.linkedin.com/in/bfink777" target="_blank" rel="noopener noreferrer"><GrLinkedinOption /></a>

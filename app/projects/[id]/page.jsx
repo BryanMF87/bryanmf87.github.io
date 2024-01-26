@@ -25,7 +25,7 @@ const Project = ({ params }) => {
 
   if (loading) {
     return (
-      <div className="h-96 w-full flex flex-col gap-2 justify-center items-center text-ccOffWhite bg-ccOffBlack sm:flex-row max-w-8xl mx-auto">
+      <div className="h-96 w-full flex flex-col gap-2 justify-center items-center text-ccOffWhite bg-ccOffBlack sm:flex-row max-w-9xl mx-auto">
         <p className="text-4xl font-semibold md:text-5xl">Project loading</p>
         <div className="rotate grid grid-cols-2 gap-3 p-4 bg-ccGray3 rounded-full">
           <div className="w-2 h-2 bg-ccOffWhite rounded-full"></div>
@@ -39,7 +39,7 @@ const Project = ({ params }) => {
 
   if (!selectedProject) {
     return  (
-      <div className="h-screen w-full flex flex-col gap-8 justify-center items-center text-ccOffWhite bg-ccOffBlack max-w-8xl mx-auto">
+      <div className="h-screen w-full flex flex-col gap-8 justify-center items-center text-ccOffWhite bg-ccOffBlack max-w-9xl mx-auto">
         <p className="text-5xl font-semibold"> Woops! Project not found.</p>
         <Link 
           href="/#work"
@@ -59,11 +59,12 @@ const Project = ({ params }) => {
         alt={selectedProject.media.headerImage.alt}
         width={800}
         height={500}
-        className="h-56 w-full bg-ccGray3 mt-11 object-cover lg:h-64 xl:h-80"
+        priority={true}
+        className="h-56 w-full bg-ccGray3 mt-11 object-cover lg:h-64 xl:h-80 2xl:h-96"
       />
     
-      <div className='text-ccOffWhite bg-ccOffBlack max-w-8xl mx-auto'>
-        <div className="mt-12 pb-28 px-6 sm:px-12 md:px-20 lg:px-20 xl:px-40 max-w-screen-8xl mx-auto">
+      <div className='text-ccOffWhite bg-ccOffBlack'>
+        <div className="mt-12 pb-28 px-6 sm:px-12 md:px-20 lg:px-20 xl:px-40 max-w-9xl mx-auto">
           <div className="flex flex-col md:flex-row">
             <div className="flex-col md:w-1/2">
               <p className="text-ccHighlight text-lg">{selectedProject.subtitle}</p>
@@ -92,10 +93,10 @@ const Project = ({ params }) => {
             </div>
           </div>
 
-          <p className="mt-8 text-4xl leading-[140%] max-w-3xl">{selectedProject.description}</p>
+          <p className="mt-8 text-4xl leading-[140%] max-w-4xl">{selectedProject.description}</p>
 
 
-          <div className="flex flex-col gap-14 max-w-8xl mx-auto md:gap-20 lg:gap-40">
+          <div className="flex flex-col gap-14 max-w-9xl mx-auto md:gap-20 lg:gap-40">
             {selectedProject.media.firstMedia && (
               <MotionDiv
                 initial={{ opacity: 0, y: 50 }}
@@ -108,12 +109,12 @@ const Project = ({ params }) => {
               </MotionDiv>
             )}
 
-            <div className="flex flex-col gap-10 max-w-8xl mx-auto md:flex-row lg:gap-14">
-              <div className="md:w-7/12">
+            <div className="flex flex-col gap-10 max-w-9xl mx-auto md:flex-row lg:gap-14">
+              <div className="w-full md:w-7/12 2xl:w-1/2 flex-grow">
                 <h2 className="text-ccHighlight text-2xl mb-3">The Idea</h2>
                 <p className="leading-relaxed lg:text-2xl lg:leading-normal">{selectedProject.summary}</p>
               </div>
-              <div className="md:w-5/12">
+              <div className="w-full md:w-5/12 2xl:w-1/2 flex-grow">
                 <h2 className="text-ccHighlight text-2xl mb-3">Deliverables</h2>
                 <div className="flex flex-wrap gap-y-2 text-base list-none">
                   {selectedProject.deliverables.map((deliverable, index) => (
@@ -162,12 +163,12 @@ const Project = ({ params }) => {
               </div>
             )}
 
-            <div className="flex flex-col gap-10 max-w-8xl mx-auto md:flex-row lg:gap-14">
-              <div className="md:w-7/12">
+            <div className="flex flex-col gap-10 max-w-9xl mx-auto md:flex-row lg:gap-14">
+              <div className="w-full md:w-7/12 2xl:w-1/2 flex-grow">
                   <h2 className="text-ccHighlight text-2xl mb-3">The Outcome</h2>
                   <p className="leading-relaxed lg:text-2xl lg:leading-normal">{selectedProject.outcome}</p>
               </div>
-              <div className="md:w-5/12">
+              <div className="w-full md:w-5/12 2xl:1/2 flx-grow">
                   <h2 className="text-ccHighlight text-2xl mb-3">Tools Used</h2>
                   <div className="flex flex-wrap gap-y-2 text-base list-none">
                       {selectedProject.tools.map((tool, index) => (

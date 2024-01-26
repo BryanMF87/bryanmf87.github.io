@@ -20,7 +20,7 @@ const  ProjectGallery = () => {
 
   return (
       <section id="Work" className="bg-ccGray3">
-        <div className="relative py-28 px-6 sm:px-12 md:px-20 lg:px-40 lg:max-w-8xl lg:mx-auto">
+        <div className="relative py-28 px-6 sm:px-12 md:px-20 lg:px-40 lg:max-w-9xl lg:mx-auto">
           <MotionP
             initial={{ opacity: 0, x: -20, rotate: 90 }}
             whileInView={{ opacity: 1, x:0, rotate: 90 }}
@@ -62,7 +62,7 @@ const  ProjectGallery = () => {
                       alt={project.media.cardImage.alt}
                       width={400}
                       height={550}
-                      className="h-48 w-full sm:h-48 object-cover rounded-t-xl"
+                      className="h-48 w-full object-cover rounded-t-xl lg:h-56 xl:h-60 2xl:h-64"
                     />
                     <div className="flex flex-col w-full p-4 text-ccOffBlack bg-ccOffWhite rounded-b-xl">
                       <span className="text-ccGray text-sm font-medium leading-4 group-hover:text-ccHighlight">{project.subtitle}</span>

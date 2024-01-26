@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import './globals.css';
 
 export const metadata = {
-  title: 'Bryan Fink/s portfolio',
+  title: "Bryan Fink, frontend developer",
   description: 'Frontend developer and UX/UI designer',
   viewport: {
     width: "device-width",

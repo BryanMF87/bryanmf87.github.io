@@ -325,6 +325,6 @@ export const FAQData = [
   },
   {
     question: 'How do I accept payment?',
-    answer: 'Projects are usually paid via card services in a 50/25/25 setup using, 50% project total to start the project, 25% at the "midway" point, and 25% at after the project is complete.'
+    answer: 'Projects are usually paid via card services in a 50/25/25 setup using, 50% project total to start the project, 25% at the "midway" point, and 25% after the project is complete.'
   },
 ]

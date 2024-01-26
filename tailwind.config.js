@@ -24,10 +24,11 @@ module.exports = {
         'md': '768px',
         'lg': '1024px',
         'xl': '1280px',
+        '2xl': '1536px',
       },
       maxWidth: {
         '8xl': '1440px',
-        '9xl': '1920px'
+        '9xl': '1660px'
       },
     },
   },
