@@ -22,7 +22,8 @@ const Header = () => {
 
   return (
     <header className='fixed z-50 top-0 left-0 w-full bg-ccOffBlack'>
-      <div className="flex justify-between items-center px-6 sm:px-12 md:px-20 lg:px-40">
+      <div className="flex justify-between items-center px-6 sm:px-12 md:px-20 lg:px-40
+      ">
         <div className="flex items-center justify-between w-full">
           <a
             href={"/"}
