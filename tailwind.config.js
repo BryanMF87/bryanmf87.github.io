@@ -28,7 +28,8 @@ module.exports = {
       },
       maxWidth: {
         '8xl': '1440px',
-        '9xl': '1660px'
+        '9xl': '1660px',
+        '10xl': '1900px',
       },
     },
   },
