@@ -309,7 +309,7 @@ export const projectData = [
 export const FAQData = [
   {
     question: 'How much does your services cost?',
-    answer: 'Graphic services cost generally between $500 to $1,500 and web services between $2,0000 - $5,000 USD, depending on the size and scope of the project. The bigger and more complex a project is, the more time it takes to complete and the higher the costs.'
+    answer: 'Graphic services cost generally between $500 to $1,500 and web services between $1,500 - $5,000 USD, depending on the size and scope of the project. The bigger and more complex a project is, the more time it takes to complete and the higher the costs.'
   },
   {
     question: 'How much time does it take?',
