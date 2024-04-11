@@ -6,7 +6,6 @@ import './globals.css';
 export const metadata = {
   title: "Bryan Fink, frontend developer",
   description: 'Frontend developer and UX/UI designer',
-  image: "/homescreen.png",
   viewport: {
     width: "device-width",
     height: "device-height",
